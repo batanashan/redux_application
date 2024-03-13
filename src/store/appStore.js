@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { appReducer } from "@/reducers/appReducer";
-import { createLogger } from "redux-logger";
 
-const logger = createLogger()
+import logger from "redux-logger";
+
 export const appStore = configureStore({
     
    reducer:{appReducer},
